@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/buttonAlgorithmPerformance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Algorithm Performance"
+        android:onClick="startActivityAlgorithmPerformance" />
+    <Button
+        android:id="@+id/buttonListVisualPerformance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Visual Performance"
+        android:onClick="startActivityListVisualPerformance" />
+    <Button
+        android:id="@+id/buttonControlsVisualPerformance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Controls Visual Performance"
+        android:onClick="startActivityControlsVisualPerformance" />
+    <Button
+        android:id="@+id/buttonMemoryTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Memory Test"
+        android:onClick="startActivityMemoryTest" />
+    <Button
+        android:id="@+id/buttonCameraAccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera Access"
+        android:onClick="startActivityCameraAccess" />
+</LinearLayout>
