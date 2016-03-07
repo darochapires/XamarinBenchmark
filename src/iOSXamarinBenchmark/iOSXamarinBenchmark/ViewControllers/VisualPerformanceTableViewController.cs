@@ -45,9 +45,9 @@ namespace iOSXamarinBenchmark
 			CellInfo info = Cells [indexPath.Row];
 
 			cell.TextLabel.Text = info.TextInfo;
-			UIImage img5 = UIImage.FromFile (info.ImageName);
+			UIImage img = UIImage.FromFile (info.ImageName);
 
-			cell.ImageView.Image = img5;//info.Image;
+			cell.ImageView.Image = img;//info.Image;
 
 			return cell;
 		}
