@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0477C6D81C73E7F3003BD65B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6D71C73E7F3003BD65B /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		0477C6DB1C73E809003BD65B /* CameraAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6DA1C73E809003BD65B /* CameraAccessViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0477C6DE1C73E816003BD65B /* MemoryConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6DD1C73E816003BD65B /* MemoryConsumptionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0477C6E81C73E824003BD65B /* ConstrolsVisualPerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6E11C73E824003BD65B /* ConstrolsVisualPerformanceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0477C6E91C73E824003BD65B /* SimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6E51C73E824003BD65B /* SimpleTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		0477C6EA1C73E824003BD65B /* VisualPerformanceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6E71C73E824003BD65B /* VisualPerformanceTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0477C6ED1C73E836003BD65B /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6EC1C73E836003BD65B /* EntryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0477C6F01C73E840003BD65B /* AlgorithmPerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6EF1C73E840003BD65B /* AlgorithmPerformanceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0477C6F21C73E849003BD65B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6F11C73E849003BD65B /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		0477C6F91C73E883003BD65B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6F71C73E883003BD65B /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		0477C6FA1C73E883003BD65B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6F81C73E883003BD65B /* main.m */; settings = {ASSET_TAGS = (); }; };
+		0477C6FF1C73E90F003BD65B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6FB1C73E90F003BD65B /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		0477C7001C73E90F003BD65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6FD1C73E90F003BD65B /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		048798DD1B27906B00536F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 048798BB1B27906B00536F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048798C21B27906B00536F5F;
+			remoteInfo = test2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0477C6D61C73E7F3003BD65B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iOSNativeBenchmark/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		0477C6D71C73E7F3003BD65B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iOSNativeBenchmark/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		0477C6D91C73E809003BD65B /* CameraAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraAccessViewController.h; path = iOSNativeBenchmark/ViewControllers/CameraAccess/CameraAccessViewController.h; sourceTree = SOURCE_ROOT; };
+		0477C6DA1C73E809003BD65B /* CameraAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraAccessViewController.m; path = iOSNativeBenchmark/ViewControllers/CameraAccess/CameraAccessViewController.m; sourceTree = SOURCE_ROOT; };
+		0477C6DC1C73E816003BD65B /* MemoryConsumptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryConsumptionViewController.h; path = iOSNativeBenchmark/ViewControllers/MemoryConsumption/MemoryConsumptionViewController.h; sourceTree = SOURCE_ROOT; };
+		0477C6DD1C73E816003BD65B /* MemoryConsumptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemoryConsumptionViewController.m; path = iOSNativeBenchmark/ViewControllers/MemoryConsumption/MemoryConsumptionViewController.m; sourceTree = SOURCE_ROOT; };
+		0477C6E01C73E824003BD65B /* ConstrolsVisualPerformanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstrolsVisualPerformanceViewController.h; sourceTree = "<group>"; };
+		0477C6E11C73E824003BD65B /* ConstrolsVisualPerformanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstrolsVisualPerformanceViewController.m; sourceTree = "<group>"; };
+		0477C6E31C73E824003BD65B /* CellInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInfo.h; sourceTree = "<group>"; };
+		0477C6E41C73E824003BD65B /* SimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewCell.h; sourceTree = "<group>"; };
+		0477C6E51C73E824003BD65B /* SimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewCell.m; sourceTree = "<group>"; };
+		0477C6E61C73E824003BD65B /* VisualPerformanceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualPerformanceTableViewController.h; sourceTree = "<group>"; };
+		0477C6E71C73E824003BD65B /* VisualPerformanceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualPerformanceTableViewController.m; sourceTree = "<group>"; };
+		0477C6EB1C73E836003BD65B /* EntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryViewController.h; path = iOSNativeBenchmark/ViewControllers/EntryViewController.h; sourceTree = SOURCE_ROOT; };
+		0477C6EC1C73E836003BD65B /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryViewController.m; path = iOSNativeBenchmark/ViewControllers/EntryViewController.m; sourceTree = SOURCE_ROOT; };
+		0477C6EE1C73E840003BD65B /* AlgorithmPerformanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlgorithmPerformanceViewController.h; path = iOSNativeBenchmark/ViewControllers/AlgorithmPerformance/AlgorithmPerformanceViewController.h; sourceTree = SOURCE_ROOT; };
+		0477C6EF1C73E840003BD65B /* AlgorithmPerformanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlgorithmPerformanceViewController.m; path = iOSNativeBenchmark/ViewControllers/AlgorithmPerformance/AlgorithmPerformanceViewController.m; sourceTree = SOURCE_ROOT; };
+		0477C6F11C73E849003BD65B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = iOSNativeBenchmark/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		0477C6F71C73E883003BD65B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOSNativeBenchmark/Info.plist; sourceTree = SOURCE_ROOT; };
+		0477C6F81C73E883003BD65B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = iOSNativeBenchmark/main.m; sourceTree = SOURCE_ROOT; };
+		0477C6FC1C73E90F003BD65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = iOSNativeBenchmark/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		0477C6FE1C73E90F003BD65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iOSNativeBenchmark/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		048798C31B27906B00536F5F /* iOSNativeBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSNativeBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		048798DC1B27906B00536F5F /* iOSNativeBenchmark.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSNativeBenchmark.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		048798C01B27906B00536F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048798D91B27906B00536F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0477C6DF1C73E824003BD65B /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				0477C6E01C73E824003BD65B /* ConstrolsVisualPerformanceViewController.h */,
+				0477C6E11C73E824003BD65B /* ConstrolsVisualPerformanceViewController.m */,
+			);
+			name = Controls;
+			path = iOSNativeBenchmark/ViewControllers/VisualPerformance/Controls;
+			sourceTree = SOURCE_ROOT;
+		};
+		0477C6E21C73E824003BD65B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				0477C6EB1C73E836003BD65B /* EntryViewController.h */,
+				0477C6EC1C73E836003BD65B /* EntryViewController.m */,
+				0477C6E31C73E824003BD65B /* CellInfo.h */,
+				0477C6E41C73E824003BD65B /* SimpleTableViewCell.h */,
+				0477C6E51C73E824003BD65B /* SimpleTableViewCell.m */,
+				0477C6E61C73E824003BD65B /* VisualPerformanceTableViewController.h */,
+				0477C6E71C73E824003BD65B /* VisualPerformanceTableViewController.m */,
+			);
+			name = List;
+			path = iOSNativeBenchmark/ViewControllers/VisualPerformance/List;
+			sourceTree = SOURCE_ROOT;
+		};
+		047D62CB1B3F17F6006248AB /* CameraAccess */ = {
+			isa = PBXGroup;
+			children = (
+				0477C6D91C73E809003BD65B /* CameraAccessViewController.h */,
+				0477C6DA1C73E809003BD65B /* CameraAccessViewController.m */,
+			);
+			name = CameraAccess;
+			sourceTree = "<group>";
+		};
+		048798BA1B27906B00536F5F = {
+			isa = PBXGroup;
+			children = (
+				048798C51B27906B00536F5F /* iOSNativeBenchmark */,
+				048798C41B27906B00536F5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		048798C41B27906B00536F5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				048798C31B27906B00536F5F /* iOSNativeBenchmark.app */,
+				048798DC1B27906B00536F5F /* iOSNativeBenchmark.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		048798C51B27906B00536F5F /* iOSNativeBenchmark */ = {
+			isa = PBXGroup;
+			children = (
+				048798FF1B2A32A500536F5F /* Libraries */,
+				048798ED1B27944400536F5F /* ViewControllers */,
+				0477C6D61C73E7F3003BD65B /* AppDelegate.h */,
+				0477C6D71C73E7F3003BD65B /* AppDelegate.m */,
+				0477C6FB1C73E90F003BD65B /* LaunchScreen.xib */,
+				0477C6FD1C73E90F003BD65B /* Main.storyboard */,
+				0477C6F11C73E849003BD65B /* Images.xcassets */,
+				048798C61B27906B00536F5F /* Supporting Files */,
+			);
+			name = iOSNativeBenchmark;
+			path = test2;
+			sourceTree = "<group>";
+		};
+		048798C61B27906B00536F5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0477C6F71C73E883003BD65B /* Info.plist */,
+				0477C6F81C73E883003BD65B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		048798EC1B27941D00536F5F /* AlgorithmPerformance */ = {
+			isa = PBXGroup;
+			children = (
+				0477C6EE1C73E840003BD65B /* AlgorithmPerformanceViewController.h */,
+				0477C6EF1C73E840003BD65B /* AlgorithmPerformanceViewController.m */,
+			);
+			name = AlgorithmPerformance;
+			sourceTree = "<group>";
+		};
+		048798ED1B27944400536F5F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				047D62CB1B3F17F6006248AB /* CameraAccess */,
+				048798EF1B27945900536F5F /* MemoryConsumption */,
+				048798EE1B27944F00536F5F /* VisualPerformance */,
+				048798EC1B27941D00536F5F /* AlgorithmPerformance */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		048798EE1B27944F00536F5F /* VisualPerformance */ = {
+			isa = PBXGroup;
+			children = (
+				0477C6DF1C73E824003BD65B /* Controls */,
+				0477C6E21C73E824003BD65B /* List */,
+			);
+			name = VisualPerformance;
+			sourceTree = "<group>";
+		};
+		048798EF1B27945900536F5F /* MemoryConsumption */ = {
+			isa = PBXGroup;
+			children = (
+				0477C6DC1C73E816003BD65B /* MemoryConsumptionViewController.h */,
+				0477C6DD1C73E816003BD65B /* MemoryConsumptionViewController.m */,
+			);
+			name = MemoryConsumption;
+			sourceTree = "<group>";
+		};
+		048798FF1B2A32A500536F5F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		048798C21B27906B00536F5F /* iOSNativeBenchmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048798E61B27906C00536F5F /* Build configuration list for PBXNativeTarget "iOSNativeBenchmark" */;
+			buildPhases = (
+				048798BF1B27906B00536F5F /* Sources */,
+				048798C01B27906B00536F5F /* Frameworks */,
+				048798C11B27906B00536F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSNativeBenchmark;
+			productName = test2;
+			productReference = 048798C31B27906B00536F5F /* iOSNativeBenchmark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		048798DB1B27906B00536F5F /* iOSNativeBenchmarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048798E91B27906C00536F5F /* Build configuration list for PBXNativeTarget "iOSNativeBenchmarkTests" */;
+			buildPhases = (
+				048798D81B27906B00536F5F /* Sources */,
+				048798D91B27906B00536F5F /* Frameworks */,
+				048798DA1B27906B00536F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048798DE1B27906B00536F5F /* PBXTargetDependency */,
+			);
+			name = iOSNativeBenchmarkTests;
+			productName = test2Tests;
+			productReference = 048798DC1B27906B00536F5F /* iOSNativeBenchmark.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		048798BB1B27906B00536F5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = RP;
+				TargetAttributes = {
+					048798C21B27906B00536F5F = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = NB5SMLFRY7;
+					};
+					048798DB1B27906B00536F5F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 048798C21B27906B00536F5F;
+					};
+				};
+			};
+			buildConfigurationList = 048798BE1B27906B00536F5F /* Build configuration list for PBXProject "iOSNativeBenchmark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 048798BA1B27906B00536F5F;
+			productRefGroup = 048798C41B27906B00536F5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				048798C21B27906B00536F5F /* iOSNativeBenchmark */,
+				048798DB1B27906B00536F5F /* iOSNativeBenchmarkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		048798C11B27906B00536F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0477C6F21C73E849003BD65B /* Images.xcassets in Resources */,
+				0477C6FF1C73E90F003BD65B /* LaunchScreen.xib in Resources */,
+				0477C6F91C73E883003BD65B /* Info.plist in Resources */,
+				0477C7001C73E90F003BD65B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048798DA1B27906B00536F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		048798BF1B27906B00536F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0477C6E91C73E824003BD65B /* SimpleTableViewCell.m in Sources */,
+				0477C6EA1C73E824003BD65B /* VisualPerformanceTableViewController.m in Sources */,
+				0477C6DB1C73E809003BD65B /* CameraAccessViewController.m in Sources */,
+				0477C6DE1C73E816003BD65B /* MemoryConsumptionViewController.m in Sources */,
+				0477C6D81C73E7F3003BD65B /* AppDelegate.m in Sources */,
+				0477C6ED1C73E836003BD65B /* EntryViewController.m in Sources */,
+				0477C6E81C73E824003BD65B /* ConstrolsVisualPerformanceViewController.m in Sources */,
+				0477C6FA1C73E883003BD65B /* main.m in Sources */,
+				0477C6F01C73E840003BD65B /* AlgorithmPerformanceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048798D81B27906B00536F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		048798DE1B27906B00536F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 048798C21B27906B00536F5F /* iOSNativeBenchmark */;
+			targetProxy = 048798DD1B27906B00536F5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0477C6FB1C73E90F003BD65B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0477C6FC1C73E90F003BD65B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		0477C6FD1C73E90F003BD65B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0477C6FE1C73E90F003BD65B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		048798E41B27906B00536F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		048798E51B27906B00536F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		048798E71B27906C00536F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/iOSNativeBenchmark/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rochapires.iosnativebenchmark;
+				PRODUCT_NAME = iOSNativeBenchmark;
+			};
+			name = Debug;
+		};
+		048798E81B27906C00536F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/iOSNativeBenchmark/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rochapires.iosnativebenchmark;
+				PRODUCT_NAME = iOSNativeBenchmark;
+			};
+			name = Release;
+		};
+		048798EA1B27906C00536F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = test2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rochapires.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = iOSNativeBenchmark;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSNativeBenchmark.app/iOSNativeBenchmark";
+			};
+			name = Debug;
+		};
+		048798EB1B27906C00536F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = test2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rochapires.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = iOSNativeBenchmark;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSNativeBenchmark.app/iOSNativeBenchmark";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		048798BE1B27906B00536F5F /* Build configuration list for PBXProject "iOSNativeBenchmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048798E41B27906B00536F5F /* Debug */,
+				048798E51B27906B00536F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048798E61B27906C00536F5F /* Build configuration list for PBXNativeTarget "iOSNativeBenchmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048798E71B27906C00536F5F /* Debug */,
+				048798E81B27906C00536F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048798E91B27906C00536F5F /* Build configuration list for PBXNativeTarget "iOSNativeBenchmarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048798EA1B27906C00536F5F /* Debug */,
+				048798EB1B27906C00536F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 048798BB1B27906B00536F5F /* Project object */;
+}
