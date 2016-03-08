@@ -74,12 +74,8 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\pic.imageset\Contents.json" />
     <ImageAsset Include="Resources\XamarinIcon.xcassets\AppIcons.appiconset\Contents.json" />
     <ImageAsset Include="Resources\XamarinIcon.xcassets\LaunchImages.launchimage\Contents.json" />
-    <ImageAsset Include="Resources\XamarinIcon.xcassets\Image.imageset\Contents.json" />
-    <ImageAsset Include="Resources\XamarinIcon.xcassets\Image.imageset\xamarin.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -115,11 +111,5 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <Folder Include="ViewControllers\" />
-    <Folder Include="Resources\Images.xcassets\pic.imageset\" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Default-568h%402x.png" />
-    <BundleResource Include="Resources\Images.xcassets\pic.imageset\xamarin.png" />
-    <BundleResource Include="Resources\xamarin.png" />
   </ItemGroup>
 </Project>
