@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'benchmarkthesis'
+            keyPassword 'benchmarkthesis'
+            storeFile file('C:/Users/daroc/Documents/thesis/XamarinBenchmark/src/AndroidNativeBenchmark/keystore/benchmarkthesis.keystore')
+            storePassword 'benchmarkthesis'
+        }
+    }
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
-
     defaultConfig {
         applicationId "com.rochapires.admin.androidnativebenchmark"
         minSdkVersion 16
@@ -20,6 +27,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.2.0'
 }
