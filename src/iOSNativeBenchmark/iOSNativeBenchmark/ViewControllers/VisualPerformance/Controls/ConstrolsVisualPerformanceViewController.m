@@ -10,12 +10,16 @@
 
 @interface ConstrolsVisualPerformanceViewController ()
 
+@property NSTimeInterval startDate;
+
 @end
 
 @implementation ConstrolsVisualPerformanceViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.startDate = [[NSDate date] timeIntervalSince1970];
     
     for (int i = 0; i<1000; i++) {
         
@@ -62,6 +66,18 @@
         
         [self.view addConstraints:@[width, height, top, leading]];
     }
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    NSTimeInterval endDate = [[NSDate date] timeIntervalSince1970];
+    NSTimeInterval duration = endDate - self.startDate;
+    
+    NSString *message = [NSString stringWithFormat:@"%f miliseconds", duration];
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Elaped Time" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
 }
 
 @end
