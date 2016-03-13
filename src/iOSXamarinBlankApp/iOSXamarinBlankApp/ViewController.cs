@@ -9,6 +9,15 @@ namespace iOSXamarinBlankApp
 		public ViewController (IntPtr handle) : base (handle)
 		{
 		}
+
+		public override void ViewDidAppear (bool animated)
+		{
+			var elapsedTimeSinceLaunch = Application.LaunchStopwatch.ElapsedMilliseconds;
+			UIAlertView alert = new UIAlertView ("Launch Time", elapsedTimeSinceLaunch + " miliseconds", null, "OK", null);
+			alert.Show ();
+
+			base.ViewDidAppear (animated);
+		}
 	}
 }
 
