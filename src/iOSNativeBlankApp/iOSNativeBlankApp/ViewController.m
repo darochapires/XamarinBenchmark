@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+extern NSTimeInterval startDate;
+
 @interface ViewController ()
 
 @end
@@ -16,6 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    NSTimeInterval endDate = [[NSDate date] timeIntervalSince1970];
+    NSTimeInterval duration = endDate - startDate;
+    
+    NSString *message = [NSString stringWithFormat:@"%f miliseconds", duration];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Elapsed Time" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 @end
