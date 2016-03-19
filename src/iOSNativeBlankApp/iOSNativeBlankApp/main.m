@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
+NSTimeInterval startDate;
+
 int main(int argc, char * argv[]) {
+        
+    startDate = [[NSDate date] timeIntervalSince1970];
+    
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
