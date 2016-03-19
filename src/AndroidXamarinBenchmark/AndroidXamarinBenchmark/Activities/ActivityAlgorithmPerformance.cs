@@ -1,5 +1,6 @@
 using Android.App;
 using Android.OS;
+using Android.Util;
 using Android.Widget;
 using System;
 using System.Diagnostics;
@@ -91,7 +92,7 @@ namespace AndroidXamarinBenchmark.Activities
 
 							long elapsedMilli = sw.ElapsedMilliseconds;
 							totalTime += elapsedMilli;
-							String timeElapsedText = "Time " + i + ": " + elapsedMilli;
+							string timeElapsedText = "Time " + i + ": " + elapsedMilli;
 							switch(i) {
 							case 1:
 								textViewlTime1.Text = timeElapsedText;
@@ -125,12 +126,14 @@ namespace AndroidXamarinBenchmark.Activities
 								break;
 							default:
 								break;
-							}
+                            }
+                            Log.Info("AlgorithmPerformance", timeElapsedText);
 
-							sw.Reset();
+                            sw.Reset();
 						}
 						textViewlTimeAverage.Text = "Average Time: " + totalTime / 10;
-					});
+                        Log.Info("AlgorithmPerformance", textViewlTimeAverage.Text);
+                    });
 			};
         }
 

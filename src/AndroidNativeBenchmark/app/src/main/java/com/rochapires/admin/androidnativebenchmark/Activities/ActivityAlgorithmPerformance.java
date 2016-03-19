@@ -127,7 +127,8 @@ public class ActivityAlgorithmPerformance extends AppCompatActivity {
                             break;
                     }
                 }
-                textViewlTimeAverage.setText("Average Time: " + totalTime/10);
+                textViewlTimeAverage.setText("Average Time: " + totalTime / 10);
+                Log.Info("AlgorithmPerformance", textViewlTimeAverage.Text);
             }
         });
     }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -37,16 +37,23 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchFloat32>true</MtouchFloat32>
-    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchFloat32>True</MtouchFloat32>
+    <MtouchUseSGen>True</MtouchUseSGen>
     <CodesignKey>iPhone Developer: Pedro Pires (U468WXPN7U)</CodesignKey>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchUseRefCounting>True</MtouchUseRefCounting>
     <CodesignProvision>e03d6885-918f-467f-a138-852bddcb8f23</CodesignProvision>
-    <MtouchUseLlvm>true</MtouchUseLlvm>
-    <MtouchUseThumb>true</MtouchUseThumb>
-    <IpaPackageName>
-    </IpaPackageName>
-    <MtouchI18n>west</MtouchI18n>
+    <MtouchUseLlvm>True</MtouchUseLlvm>
+    <MtouchUseThumb>True</MtouchUseThumb>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchSdkVersion>9.0</MtouchSdkVersion>
+    <MtouchLink>Full</MtouchLink>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <OptimizePNGs>True</OptimizePNGs>
+    <BuildIpa>True</BuildIpa>
+    <IpaIncludeArtwork>False</IpaIncludeArtwork>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -56,10 +63,25 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>i386</MtouchArch>
-    <MtouchLink>None</MtouchLink>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchLink>Full</MtouchLink>
+    <MtouchUseRefCounting>True</MtouchUseRefCounting>
+    <CodesignKey>iPhone Developer: Pedro Pires (U468WXPN7U)</CodesignKey>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <CodesignProvision />
+    <CodesignEntitlements />
+    <CodesignResourceRules />
+    <CodesignExtraArgs />
+    <BuildIpa>True</BuildIpa>
+    <IpaIncludeArtwork>False</IpaIncludeArtwork>
+    <MtouchSdkVersion>9.0</MtouchSdkVersion>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchFloat32>False</MtouchFloat32>
+    <MtouchI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -90,7 +112,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />

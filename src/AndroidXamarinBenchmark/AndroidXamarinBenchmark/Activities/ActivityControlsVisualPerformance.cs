@@ -1,5 +1,6 @@
 using Android.App;
 using Android.OS;
+using Android.Util;
 using Android.Widget;
 using System.Diagnostics;
 
@@ -55,6 +56,7 @@ namespace AndroidXamarinBenchmark.Activities
             base.OnWindowFocusChanged(hasFocus);
             if (_timeElapsed == 0)
             {
+                Log.Info("benchmark", "ActivityControlsVisualPerformance Finished");
                 Stopwatch.Stop();
                 _timeElapsed = Stopwatch.ElapsedMilliseconds;
             }
