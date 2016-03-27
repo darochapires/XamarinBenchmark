@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 using AndroidXamarinBenchmark.Activities;
+using Android.Util;
 
 namespace AndroidXamarinBenchmark
 {
@@ -23,21 +24,25 @@ namespace AndroidXamarinBenchmark
 
             buttonAlgorithmPerformance.Click += (sender, e) =>
             {
+                Log.Info("benchmark", "ActivityAlgorithmPerformance Started");
                 StartActivity(typeof(ActivityAlgorithmPerformance));
             };
 
             buttonListVisualPerformance.Click += (sender, e) =>
             {
+                Log.Info("benchmark", "ActivityListVisualPerformance Started");
                 StartActivity(typeof(ActivityListVisualPerformance));
             };
 
             buttonControlsVisualPerformance.Click += (sender, e) =>
             {
+                Log.Info("benchmark", "ActivityControlsVisualPerformance Started");
                 StartActivity(typeof(ActivityControlsVisualPerformance));
             };
 
             buttonCameraAccess.Click += (sender, e) =>
             {
+                Log.Info("benchmark", "ActivityCameraAccess Started");
                 StartActivity(typeof(ActivityCameraAccess));
             };
         }

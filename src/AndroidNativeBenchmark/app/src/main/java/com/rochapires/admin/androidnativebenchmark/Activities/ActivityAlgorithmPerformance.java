@@ -2,6 +2,7 @@ package com.rochapires.admin.androidnativebenchmark.Activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -81,10 +82,8 @@ public class ActivityAlgorithmPerformance extends AppCompatActivity {
     {
         runOnUiThread(new Runnable() {
             public void run() {
-
                 EditText editTextNumberOfIterations = (EditText) findViewById(R.id.editTextNumberOfIterations);
                 int numberOfIterations = Integer.parseInt(editTextNumberOfIterations.getText().toString());
-
                 long totalTime = 0;
                 for(int i = 1; i <= 10; i++) {
                     long startTime = System.currentTimeMillis();
@@ -126,8 +125,11 @@ public class ActivityAlgorithmPerformance extends AppCompatActivity {
                         default:
                             break;
                     }
+                    //Log.i("AlgorithmPerformance", timeElapsedText);
                 }
-                textViewlTimeAverage.setText("Average Time: " + totalTime/10);
+                String averageText = "Average Time: " + totalTime / 10;
+                textViewlTimeAverage.setText(averageText);
+                //Log.i("AlgorithmPerformance", averageText);
             }
         });
     }

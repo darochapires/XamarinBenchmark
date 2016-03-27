@@ -1,5 +1,6 @@
 using Android.App;
 using Android.OS;
+using Android.Util;
 using Android.Widget;
 using System.Diagnostics;
 
@@ -32,7 +33,7 @@ namespace AndroidXamarinBenchmark.Activities
             for (int j = 0; j < 450; j++)
             {
                 LinearLayout linearLayout = new LinearLayout(this);
-                LinearLayout.LayoutParams linearLayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
+                LinearLayout.LayoutParams linearLayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WrapContent, LinearLayout.LayoutParams.WrapContent);
                 linearLayout.Orientation = Orientation.Horizontal;
                 linearLayoutWrapper.AddView(linearLayout, linearLayoutParams);
 
@@ -45,9 +46,7 @@ namespace AndroidXamarinBenchmark.Activities
                     linearLayoutParams.Weight = 1;
                     linearLayout.AddView(button, linearLayoutParams);
                 }
-
             }
-
         }
 
         public override void OnWindowFocusChanged(bool hasFocus)
@@ -55,6 +54,7 @@ namespace AndroidXamarinBenchmark.Activities
             base.OnWindowFocusChanged(hasFocus);
             if (_timeElapsed == 0)
             {
+                Log.Info("benchmark", "ActivityControlsVisualPerformance Finished");
                 Stopwatch.Stop();
                 _timeElapsed = Stopwatch.ElapsedMilliseconds;
             }
