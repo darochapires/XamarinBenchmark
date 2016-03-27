@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0477C6D81C73E7F3003BD65B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6D71C73E7F3003BD65B /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
-		0477C6DB1C73E809003BD65B /* CameraAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6DA1C73E809003BD65B /* CameraAccessViewController.m */; settings = {ASSET_TAGS = (); }; };
-		0477C6DE1C73E816003BD65B /* MemoryConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6DD1C73E816003BD65B /* MemoryConsumptionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		0477C6E81C73E824003BD65B /* ConstrolsVisualPerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6E11C73E824003BD65B /* ConstrolsVisualPerformanceViewController.m */; settings = {ASSET_TAGS = (); }; };
-		0477C6E91C73E824003BD65B /* SimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6E51C73E824003BD65B /* SimpleTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		0477C6EA1C73E824003BD65B /* VisualPerformanceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6E71C73E824003BD65B /* VisualPerformanceTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		0477C6ED1C73E836003BD65B /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6EC1C73E836003BD65B /* EntryViewController.m */; settings = {ASSET_TAGS = (); }; };
-		0477C6F01C73E840003BD65B /* AlgorithmPerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6EF1C73E840003BD65B /* AlgorithmPerformanceViewController.m */; settings = {ASSET_TAGS = (); }; };
-		0477C6F21C73E849003BD65B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6F11C73E849003BD65B /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		0477C6F91C73E883003BD65B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6F71C73E883003BD65B /* Info.plist */; settings = {ASSET_TAGS = (); }; };
-		0477C6FA1C73E883003BD65B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6F81C73E883003BD65B /* main.m */; settings = {ASSET_TAGS = (); }; };
-		0477C6FF1C73E90F003BD65B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6FB1C73E90F003BD65B /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
-		0477C7001C73E90F003BD65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6FD1C73E90F003BD65B /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		0477C6D81C73E7F3003BD65B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6D71C73E7F3003BD65B /* AppDelegate.m */; };
+		0477C6DB1C73E809003BD65B /* CameraAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6DA1C73E809003BD65B /* CameraAccessViewController.m */; };
+		0477C6DE1C73E816003BD65B /* MemoryConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6DD1C73E816003BD65B /* MemoryConsumptionViewController.m */; };
+		0477C6E81C73E824003BD65B /* ConstrolsVisualPerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6E11C73E824003BD65B /* ConstrolsVisualPerformanceViewController.m */; };
+		0477C6E91C73E824003BD65B /* SimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6E51C73E824003BD65B /* SimpleTableViewCell.m */; };
+		0477C6EA1C73E824003BD65B /* VisualPerformanceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6E71C73E824003BD65B /* VisualPerformanceTableViewController.m */; };
+		0477C6ED1C73E836003BD65B /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6EC1C73E836003BD65B /* EntryViewController.m */; };
+		0477C6F01C73E840003BD65B /* AlgorithmPerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6EF1C73E840003BD65B /* AlgorithmPerformanceViewController.m */; };
+		0477C6F21C73E849003BD65B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6F11C73E849003BD65B /* Images.xcassets */; };
+		0477C6F91C73E883003BD65B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6F71C73E883003BD65B /* Info.plist */; };
+		0477C6FA1C73E883003BD65B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477C6F81C73E883003BD65B /* main.m */; };
+		0477C6FF1C73E90F003BD65B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6FB1C73E90F003BD65B /* LaunchScreen.xib */; };
+		0477C7001C73E90F003BD65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477C6FD1C73E90F003BD65B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -437,10 +437,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSNativeBenchmark/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rochapires.iosnativebenchmark;
 				PRODUCT_NAME = iOSNativeBenchmark;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -449,10 +451,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSNativeBenchmark/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rochapires.iosnativebenchmark;
 				PRODUCT_NAME = iOSNativeBenchmark;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -45,9 +45,9 @@
     [self.textFieldNumberOfIterations setText:[NSString stringWithFormat:@"%d", numberOfIterations]];
     
     //running on UI thread
-    dispatch_async(dispatch_get_main_queue(), ^{
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         NSTimeInterval start = [[NSDate date] timeIntervalSince1970];
-        int result = [self Fibonacci:numberOfIterations];
+        int result = [AlgorithmPerformanceViewController Fibonacci:numberOfIterations];
         NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
         
         NSTimeInterval duration = end - start;
@@ -55,7 +55,9 @@
         
         [self.labelFibonacciValue setText:[NSString stringWithFormat:@"%d",result]];
         [self.labelFibonacciTime1 setText:[NSString stringWithFormat:@"%f",duration]];
-    });
+    }];
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//    });
 }
 
 - (IBAction)buttonRunTenTimesTouched:(id)sender {
@@ -71,7 +73,7 @@
         for(int i = 0; i < 10; i++) {
         
             NSTimeInterval start = [[NSDate date] timeIntervalSince1970];
-            int result = [self Fibonacci:numberOfIterations];
+            int result = [AlgorithmPerformanceViewController Fibonacci:numberOfIterations];
             NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
             
             NSTimeInterval duration = end - start;
@@ -118,7 +120,7 @@
     });
 }
 
-- (int)Fibonacci:(int)num {
++ (int)Fibonacci:(int)num {
     if (num == 0) {
         return 0;
     }

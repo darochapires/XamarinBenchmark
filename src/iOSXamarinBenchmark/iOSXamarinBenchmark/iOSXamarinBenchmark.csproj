@@ -59,12 +59,11 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>iPhone Developer: Pedro Pires (U468WXPN7U)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <IpaPackageName>
     </IpaPackageName>
-    <CodesignProvision>e03d6885-918f-467f-a138-852bddcb8f23</CodesignProvision>
     <BuildIpa>true</BuildIpa>
   </PropertyGroup>
   <ItemGroup>

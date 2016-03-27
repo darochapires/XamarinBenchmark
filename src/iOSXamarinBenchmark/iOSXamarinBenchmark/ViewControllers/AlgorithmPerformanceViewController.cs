@@ -38,17 +38,22 @@ namespace iOSXamarinBenchmark
 
 		private void RunFibonacci ()
 		{
-			InvokeOnMainThread (() =>  {
-				int numberOfIterations = SetNumberOfIterations ();
-				textFieldNumberOfIterations.Text = numberOfIterations.ToString ();
-				Stopwatch watch = Stopwatch.StartNew ();
-				int result = Fibonacci (numberOfIterations);
-				watch.Stop ();
-				var elapsedMs = watch.ElapsedMilliseconds;
-				labelFibonacciTime.Text = elapsedMs.ToString ();
-				labelFibonacciValue.Text = result.ToString ();
-				Console.WriteLine ("Fibonacci Value: " + result + " Duration in milis: " + elapsedMs);
-			});
+			NSOperationQueue.MainQueue.AddOperation (
+				() => {
+					int numberOfIterations = SetNumberOfIterations ();
+					textFieldNumberOfIterations.Text = numberOfIterations.ToString ();
+					Stopwatch watch = Stopwatch.StartNew ();
+					int result = Fibonacci (numberOfIterations);
+					watch.Stop ();
+					var elapsedMs = watch.ElapsedMilliseconds;
+					labelFibonacciTime.Text = elapsedMs.ToString ();
+					labelFibonacciValue.Text = result.ToString ();
+					Console.WriteLine ("Fibonacci Value: " + result + " Duration in milis: " + elapsedMs);
+				}
+			);
+
+//			InvokeOnMainThread (() =>  {
+//			});
 		}
 
 		private int SetNumberOfIterations ()
