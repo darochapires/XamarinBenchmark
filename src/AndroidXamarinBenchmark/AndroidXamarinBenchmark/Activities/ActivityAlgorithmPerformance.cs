@@ -2,7 +2,6 @@ using Android.App;
 using Android.OS;
 using Android.Util;
 using Android.Widget;
-using System;
 using System.Diagnostics;
 
 namespace AndroidXamarinBenchmark.Activities
@@ -80,10 +79,6 @@ namespace AndroidXamarinBenchmark.Activities
 					{
 						Stopwatch sw = new Stopwatch();
 						int numberOfIterations = int.Parse(editTextNumberOfIterations.Text);
-
-						//just to warm things up
-						Fibonacci(10);
-
 						long totalTime = 0;
 						for(int i = 1; i <= 10; i++) {
 							sw.Start();
@@ -127,12 +122,12 @@ namespace AndroidXamarinBenchmark.Activities
 							default:
 								break;
                             }
-                            Log.Info("AlgorithmPerformance", timeElapsedText);
+                            //Log.Info("AlgorithmPerformance", timeElapsedText);
 
                             sw.Reset();
 						}
 						textViewlTimeAverage.Text = "Average Time: " + totalTime / 10;
-                        Log.Info("AlgorithmPerformance", textViewlTimeAverage.Text);
+                        //Log.Info("AlgorithmPerformance", textViewlTimeAverage.Text);
                     });
 			};
         }
