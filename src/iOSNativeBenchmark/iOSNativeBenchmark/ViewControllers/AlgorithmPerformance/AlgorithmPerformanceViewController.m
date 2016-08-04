@@ -56,8 +56,6 @@
         [self.labelFibonacciValue setText:[NSString stringWithFormat:@"%d",result]];
         [self.labelFibonacciTime1 setText:[NSString stringWithFormat:@"%f",duration]];
     }];
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//    });
 }
 
 - (IBAction)buttonRunTenTimesTouched:(id)sender {
@@ -66,7 +64,6 @@
     
     [self.textFieldNumberOfIterations setText:[NSString stringWithFormat:@"%d", numberOfIterations]];
     
-    //running on UI thread
     dispatch_async(dispatch_get_main_queue(), ^{
         
         NSTimeInterval totalTime = 0;

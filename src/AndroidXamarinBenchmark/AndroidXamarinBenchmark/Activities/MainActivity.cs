@@ -2,14 +2,12 @@
 using Android.Widget;
 using Android.OS;
 using AndroidXamarinBenchmark.Activities;
-using Android.Util;
 
 namespace AndroidXamarinBenchmark
 {
     [Activity(Label = "AndroidXamarinBenchmark", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -24,29 +22,28 @@ namespace AndroidXamarinBenchmark
 
             buttonAlgorithmPerformance.Click += (sender, e) =>
             {
-                Log.Info("benchmark", "ActivityAlgorithmPerformance Started");
+                //Log.Info("benchmark", "ActivityAlgorithmPerformance Started");
                 StartActivity(typeof(ActivityAlgorithmPerformance));
             };
 
             buttonListVisualPerformance.Click += (sender, e) =>
             {
-                Log.Info("benchmark", "ActivityListVisualPerformance Started");
+                //Log.Info("benchmark", "ActivityListVisualPerformance Started");
                 StartActivity(typeof(ActivityListVisualPerformance));
             };
 
             buttonControlsVisualPerformance.Click += (sender, e) =>
             {
-                Log.Info("benchmark", "ActivityControlsVisualPerformance Started");
+                //Log.Info("benchmark", "ActivityControlsVisualPerformance Started");
                 StartActivity(typeof(ActivityControlsVisualPerformance));
             };
 
             buttonCameraAccess.Click += (sender, e) =>
             {
-                Log.Info("benchmark", "ActivityCameraAccess Started");
+                //Log.Info("benchmark", "ActivityCameraAccess Started");
                 StartActivity(typeof(ActivityCameraAccess));
             };
         }
-
     }
 }
 

@@ -1,12 +1,10 @@
 using Android.App;
 using Android.OS;
-using Android.Util;
 using Android.Widget;
 using System.Diagnostics;
 
 namespace AndroidXamarinBenchmark.Activities
 {
-
     [Activity(Label = "ActivityAlgorithmPerformance")]
     public class ActivityAlgorithmPerformance : Activity
     {

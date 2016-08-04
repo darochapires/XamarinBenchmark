@@ -2,15 +2,11 @@ package com.rochapires.admin.androidnativebenchmark.Activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.rochapires.admin.androidnativebenchmark.R;
-
 
 public class ActivityAlgorithmPerformance extends AppCompatActivity {
 
@@ -46,7 +42,6 @@ public class ActivityAlgorithmPerformance extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_activity_algorithm_performance, menu);
         return true;
     }
@@ -55,7 +50,6 @@ public class ActivityAlgorithmPerformance extends AppCompatActivity {
     {
         runOnUiThread(new Runnable() {
             public void run() {
-                TextView textViewlTime = (TextView) findViewById(R.id.textViewlTime1);
                 EditText editTextNumberOfIterations = (EditText) findViewById(R.id.editTextNumberOfIterations);
                 int numberOfIterations = Integer.parseInt(editTextNumberOfIterations.getText().toString());
 

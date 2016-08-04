@@ -1,16 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.Graphics;
+using Android.OS;
 using Android.Provider;
+using Android.Widget;
 
 namespace AndroidXamarinBenchmark.Activities
 {
@@ -18,7 +11,6 @@ namespace AndroidXamarinBenchmark.Activities
     public class ActivityCameraAccess : Activity
     {
         private static int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
-        //private Uri fileUri;
         private ImageView imageView;
 
         protected override void OnCreate(Bundle bundle)
@@ -27,7 +19,7 @@ namespace AndroidXamarinBenchmark.Activities
 
             SetContentView(Resource.Layout.ActivityCameraAccess);
 
-            this.imageView = FindViewById<ImageView>(Resource.Id.imageViewPhoto);
+            imageView = FindViewById<ImageView>(Resource.Id.imageViewPhoto);
             Button photoButton = FindViewById<Button>(Resource.Id.buttonTakePhoto);
 
             photoButton.Click += (sender, e) =>
@@ -46,6 +38,5 @@ namespace AndroidXamarinBenchmark.Activities
                 imageView.SetImageBitmap(photo);
             }
         }
-
     }
 }

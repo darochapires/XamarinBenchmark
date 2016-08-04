@@ -14,25 +14,27 @@ namespace iOSXamarinBenchmark
 			
 		}
 
+		public override void ViewDidLoad ()
+		{
+			buttonTakePhoto.TouchUpInside += OpenCameraViewController;
+		}
+
 		public void OpenCameraViewController (object sender, EventArgs ea) {
 
 			picker = new UIImagePickerController();
 			picker.AllowsEditing = true;
 
-			if(UIImagePickerController.IsSourceTypeAvailable(UIImagePickerControllerSourceType.Camera))//[UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+			if(UIImagePickerController.IsSourceTypeAvailable(UIImagePickerControllerSourceType.Camera))
 			{
 				picker.SourceType = UIImagePickerControllerSourceType.Camera;
 			}
-			else if(UIImagePickerController.IsSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary))//[UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+			else if(UIImagePickerController.IsSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary))
 			{
 				picker.SourceType = UIImagePickerControllerSourceType.PhotoLibrary;
 			}
 
-
 			picker.FinishedPickingMedia += (s, e) => {
-//			picker.FinishedPickingImage += (s, e) => {
-//				UIImage editedImage = e.EditingInfo[UIImagePickerController.EditedImage] as UIImage;
-				UIImage editedImage = e.Info[UIImagePickerController.EditedImage] as UIImage;//.EditingInfo[UIImagePickerController.EditedImage] as UIImage;
+				UIImage editedImage = e.Info[UIImagePickerController.EditedImage] as UIImage;
 				imageViewPhoto.Image = editedImage;
 	
 				picker.DismissViewController (true, null);
@@ -43,24 +45,6 @@ namespace iOSXamarinBenchmark
 			};
 
 			PresentViewController(picker, true, null);
-		}
-
-//		protected void HandleFinishedPickingMedia(object sender, UIImagePickerImagePickedEventArgs e)
-//		{
-//			UIImage editedImage = e.EditingInfo[UIImagePickerController.EditedImage] as UIImage;
-//			imageViewPhoto.Image = editedImage;
-//
-//			picker.DismissViewController (true, null);
-//		}
-//
-//		protected void HandleCanceledPickingMedia(object sender, UIImagePickerMediaPickedEventArgs e)
-//		{
-//			picker.DismissViewController(true, null);
-//		}
-
-		public override void ViewDidLoad ()
-		{
-			buttonTakePhoto.TouchUpInside += OpenCameraViewController;
 		}
 	}
 }
